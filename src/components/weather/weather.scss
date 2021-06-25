@@ -1,66 +1,33 @@
 @import '../../variables.scss';
 
-.current-temperature {
-    display: flex;
-    margin-top: 0.25em;
-    width: 100%;
-}
-.current-temperature__icon-container {
-    flex-grow: 1.25;
-    text-align: center;
-}
-.current-temperature__icon {
-    width: 20.5rem;;
-}
-.current-temperature__content-container {
-    flex-grow: 1;
-    text-align: center;
-}
-.current-temperature__city {
-    display: flex;
-    margin-top: -0.5em;
-    text-align: center;
+@media screen and (max-width: $app-max-width) {
+    .weather-by-hour {
+        width: 100%;
+        text-align: center;
+    }
+    .weather-by-hour__container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .weathTimeLogo{
+        width: 120px;
+    }
+    .weather-by-hour__item {
+        width: 10rem;
+    }
+    .weather-by-hour__hour {
+    margin-bottom: 1rem;
     color: grey;
     font-weight: 400;
-    font-size: 3rem;
-    justify-content: space-between;
-}
-.current-temperature__value {
-    font-size: 12rem;
+    font-size:3rem;
+    }
+    .degree{
     font-weight: 700;
-    line-height: 16rem;
-}
-.current-temperature__date {
-    display: flex;
-}
-.location-and-date {
-    font-weight: 700;
-    font-size: 100px;
-    width: 500px;
-    line-height: 128px;
-    margin-left: 250px;
-}
-
-@media screen and (max-width: $tablet) {
-    .current-temperature__icon-container{
-        img {
-            width: 25%;
-        }
+    font-size: 6rem;
     }
-    .current-temperature__city {
-        flex-direction: column;
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    .current-temperature__value {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-    .location-and-date{
-        font-size: 2rem;
-        text-align: center;
-    }
+    .weather-by-hour__item:hover{
+        background: white;
+        color: black;
 
-
-
+    }
 }

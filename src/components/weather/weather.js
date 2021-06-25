@@ -1,25 +1,58 @@
 import React from 'react'
+import moment from 'moment';
+import './weather.scss'
 
-const Weather = () => {
-    return (   
-        <div className="current-temperature">
-          <div className="current-temperature__icon-container">
-            <img src="" className="current-temperature__icon" alt="" /> 
-          </div>
-          <div className="current-temperature__content-container">
-            <div className="current-temperature__city">
-              <span className="current-temperature__summary">description</span>
-              <span className="current-stats__value">highestTemp &deg;/lowestTemp &deg; </span>
-                <span className="location-and-date__location">city</span>
-              <div>
-            </div>
-          </div>
-          <div className = "current-temperature__date">
-            <div className="current-temperature__value">temp&deg;</div>
-            <div className="location-and-date">date</div>
-          </div>
-          </div>
-        </div>
+const Weather = ({weatherInfo, id}) => {
+    const kelvin = 273;
+    let {dt} =weatherInfo.forecast[id]
+    let {temp } = weatherInfo.forecast[id].main
+    temp = (temp - kelvin).toFixed(0)
+    let icon = weatherInfo.forecast[id].weather[0].icon
+    let Url= ""
+    switch (icon){
+     
+        case "01d":
+          Url = './icons/sunny.svg'
+          break;
+          case "02d":
+          Url = './icons/mostly-sunny.svg'
+            break;
+            case "03d":
+           Url = './icons/mostly-sunny.svg'
+              break;
+              case "04d":
+            Url = './icons/mostly-sunny.svg'
+                break;
+                case "09d":
+             Url = './icons/mostly-sunny.svg'
+                  break;
+            case "10d":
+             Url = './icons/mostly-sunny.svg'
+                    break;
+            case "11d":
+              Url = './icons/mostly-sunny.svg'
+                      break;
+            case "13d":
+              Url = './icons/mostly-sunny.svg'
+                      break;
+             case "50d":
+                   Url = './icons/sunny.svg'
+                                  break;
+
+      default:
+
+        Url = './icons/sunny.svg';
+    }
+    return (
+
+      
+        
+    <div className="weather-by-hour__item">
+      <div className="weather-by-hour__hour">{moment(dt* 1000).format('HH:mm ')}</div>
+      <img className="weathTimeLogo" src={Url} alt="Mostly sunny" />
+      <div className="degree">{temp}&deg;</div>
+    </div>   
+        
     )
 }
 
