@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import './variables.scss';
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 12px;
+    font-size: 100%;
+    font-family: 'Roboto', reg;
+    color: white;
+    height: 100%;
+    background-color: #1c1c5c;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .main-container {
+    margin: 96px auto;
+    font-size: 1.1em;
+  }
+  .current-temperature__icon-container {
+    flex-grow: 1.25;
+    text-align: center;
+  }
+  .current-temperature__icon {
+    width: 20.5rem;;
+  }
+  .current-temperature {
+      display: flex;
+      margin-top: 0.25em;
+      width: 100%;
+  }
+  .current-temperature__icon-container {
+      flex-grow: 1.25;
+      text-align: center;
+  }
+  .current-temperature__icon {
+      width: 20.5rem;;
+  }
+  .current-temperature__content-container {
+      flex-grow: 1;
+      text-align: center;
+  }
+  .current-temperature__city {
+      display: flex;
+      margin-top: -0.5em;
+      text-align: center;
+      color: grey;
+      font-weight: 400;
+      font-size: 3rem;
+      justify-content: space-between;
+  }
+  .current-temperature__value {
+      font-size: 12rem;
+      font-weight: 700;
+      line-height: 16rem;
+  }
+  .current-temperature__date {
+      display: flex;
+      margin-bottom: 10rem;
+  }
+  .location-and-date {
+      font-weight: 700;
+      font-size: 100px;
+      width: 500px;
+      line-height: 128px;
+      margin-left: 250px;
+  }
+  
+  @media screen and (max-width: $tablet) {
+      .current-temperature__icon-container{
+          img {
+              width: 25%;
+          }
+      }
+      .current-temperature__city {
+          flex-direction: column;
+          font-size: 1.5rem;
+          text-align: center;
+      }
+      .current-temperature__value {
+          font-size: 2.5rem;
+          text-align: center;
+      }
+      .location-and-date{
+          font-size: 2rem;
+          text-align: center;
+      }
+  
+  
+  
+  } 
