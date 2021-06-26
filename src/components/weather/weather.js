@@ -49,15 +49,11 @@ const Weather = ({weatherInfo, id}) => {
         
     <div className="weather-by-hour__item">
       <div className="weather-by-hour__hour">{moment(dt* 1000).format('HH:mm ')}</div>
-      <img className="weathTimeLogo" src={Url} alt="Mostly sunny" />
-      <div className="degree">{temp}&deg;</div>
+      <img className="weather-by-hour__logo" src={Url} alt="Mostly sunny" />
+      <div className="weather-by-hour__degree">{temp}&deg;</div>
     </div>   
         
     )
-}
-
-Weather.defaultProps={
-    dayOfTimes: "one"
 }
 
 export default Weather

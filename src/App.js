@@ -1,17 +1,22 @@
 import React,{useState, useEffect} from 'react'
 import Weather from './components/weather/weather';
 
+
 const kelvin = 273;
+
 
 const App = () => {
   const [weatherInfo, setWeatherInfo] = useState(null)
   const weatherTime = [0,1,2,3,4,5,6,7]
 
+
   async function FetchWeatherData  () {
+
 
     const value= 'München'
     const APIkey = 'b6907d289e10d714a6e88b30761fae22';
     const forecast = `data/2.5/forecast?q=${value}&APPID=${APIkey}`;
+
 
     fetch(forecast)
       .then((res) => {
@@ -36,14 +41,17 @@ const App = () => {
         'December',
       ];
 
+
       const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
       const currentDate = new Date();
       const date = `${days[currentDate.getDay()]} ${currentDate.getDate()} ${
         months[currentDate.getMonth()]
       }`;
 
+
       
       const temp = data.list[0].main.temp - kelvin;
+
 
       const weatherInfo = {
         city: 'Munich',
@@ -55,12 +63,14 @@ const App = () => {
         forecast: data.list,
       };
 
+
       setWeatherInfo(weatherInfo)
     })
     .catch(error => {
       console.log(error);
     });
   };
+
 
   useEffect(() => {
   FetchWeatherData()
@@ -113,6 +123,7 @@ const App = () => {
                          Url = './icons/mostly-sunny.svg'
                                         break;
 
+
             default:
     
               Url = './icons/sunny.svg';
@@ -136,10 +147,11 @@ const App = () => {
           </div>
           <div className = "current-temperature__date">
             <div className="current-temperature__value">{temp}&deg;</div>
-            <div className="location-and-date">{date}</div>
+            <div className="location-and-date__date">{date}</div>
           </div>
           </div>
         </div>
+
 
         <div className="weather-by-hour">
           <div className="weather-by-hour__container">
@@ -153,6 +165,8 @@ const App = () => {
         </main>
     )
 }
+
+
 
 
 export default App
