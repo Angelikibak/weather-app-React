@@ -2,12 +2,12 @@
 
 .weather-by-hour {
    flex-basis: 100%;
-   margin: 2rem 0px;
+   margin: 2rem 0;
    overflow: hidden;
    text-align: center;
 }
 .weather-by-hour__container {
-   justify-content: space-evenly;
+   justify-content: space-around;
    position: relative;
    display: flex;
    overflow: scroll hidden;
@@ -17,7 +17,10 @@
 .weather-by-hour__logo {
    width: 120px;
 }
-
+.weather-by-hour__item {
+   width: 12rem;
+   border-radius: 0.3rem;
+}
 .weather-by-hour__hour {
    margin-bottom: 1rem;
    color: grey;
@@ -39,10 +42,10 @@
    }
    .weather-by-hour__item {
       flex-shrink: 0;
-      flex-basis: 90px;
-      padding: 10px;
-      margin: 0px 5px;
-      border-radius: 5px;
+      flex-basis: 6rem;
+      padding: 0.6rem;
+      margin: 0 0.3rem;
+      border-radius: 0.3rem;
       width: 10rem;
       .weather-by-hour__hour,
       .weather-by-hour__degree {
