@@ -1,118 +1,118 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 body {
-  margin: 12px;
-  font-size: 100%;
-  font-family: 'Roboto', reg;
-  color: white;
-  height: 100%;
-  background-color: #1c1c5c;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+   margin: 12px;
+   font-size: 100%;
+   font-family: 'Roboto', reg;
+   color: white;
+   height: 100%;
+   background-color: #1c1c5c;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
 }
 
 .main-container {
-  margin: 96px auto;
-  font-size: 1.1em;
+   margin: 96px auto;
+   font-size: 1.1em;
 }
 
 .current-temperature__icon-container {
-  -webkit-box-flex: 1.25;
-      -ms-flex-positive: 1.25;
-          flex-grow: 1.25;
-  text-align: center;
+   -webkit-box-flex: 1.25;
+   -ms-flex-positive: 1.25;
+   flex-grow: 1.25;
+   text-align: center;
 }
 
 .current-temperature__icon {
-  width: 20.5rem;
+   width: 20.5rem;
 }
 
 .current-temperature {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0.25em;
-  width: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   margin-top: 0.25em;
+   width: 100%;
 }
 
 .current-temperature__icon-container {
-  -webkit-box-flex: 1.25;
-      -ms-flex-positive: 1.25;
-          flex-grow: 1.25;
-  text-align: center;
+   -webkit-box-flex: 1.25;
+   -ms-flex-positive: 1.25;
+   flex-grow: 1.25;
+   text-align: center;
 }
 
 .current-temperature__icon {
-  width: 20.5rem;
+   width: 20.5rem;
 }
 
 .current-temperature__content-container {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  text-align: center;
+   -webkit-box-flex: 1;
+   -ms-flex-positive: 1;
+   flex-grow: 1;
+   text-align: center;
 }
 
 .current-temperature__city {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: -0.5em;
-  text-align: center;
-  color: grey;
-  font-weight: 400;
-  font-size: 3rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   margin-top: -0.5em;
+   text-align: center;
+   color: grey;
+   font-weight: 400;
+   font-size: 3rem;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
 }
 
 .current-temperature__value {
-  font-size: 12rem;
-  font-weight: 700;
-  line-height: 16rem;
+   font-size: 12rem;
+   font-weight: 700;
+   line-height: 16rem;
 }
 
 .current-temperature__date {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 10rem;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   margin-bottom: 10rem;
 }
 
 .location-and-date {
-  font-weight: 700;
-  font-size: 100px;
-  width: 500px;
-  line-height: 128px;
-  margin-left: 250px;
+   font-weight: 700;
+   font-size: 100px;
+   width: 500px;
+   line-height: 128px;
+   margin-left: 250px;
 }
 
 @media screen and (max-width: 450px) {
-  .current-temperature__icon-container img {
-    width: 25%;
-  }
-  .current-temperature__city {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .current-temperature__value {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  .location-and-date {
-    font-size: 2rem;
-    text-align: center;
-  }
+   .current-temperature__icon-container img {
+      width: 25%;
+   }
+   .current-temperature__city {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      font-size: 1.5rem;
+      text-align: center;
+   }
+   .current-temperature__value {
+      font-size: 2.5rem;
+      text-align: center;
+   }
+   .location-and-date {
+      font-size: 2rem;
+      text-align: center;
+   }
 }
 /*# sourceMappingURL=index.css.map */

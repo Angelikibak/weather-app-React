@@ -2,125 +2,120 @@
 @import './variables.scss';
 
 * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 12px;
-    font-size: 100%;
-    font-family: 'Roboto', reg;
-    color: white;
-    height: 100%;
-    background-color: #1c1c5c;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  .main-container {
-    margin: 6rem auto;
-    font-size: 1.1em;
-  }
-  .current-temperature__icon-container {
-    flex-grow: 1.25;
-    text-align: center;
-  } 
-  .weather-by-hour__logo {
-        width: 20.5rem;
-   }
-  .current-temperature {
-      display: flex;
-      margin-top: 0.25em;
-      width: 100%;
-  }
-  .current-temperature__icon-container {
-      flex-grow: 1.25;
-      text-align: center;
-  }
-  .current-temperature__icon {
-      width: 20.5rem;;
-  }
-  .current-temperature__content-container {
-      flex-grow: 1;
-      text-align: center;
-  }
-  .current-temperature__city {
-      display: flex;
-      margin-top: -0.5em;
-      text-align: center;
-      color: grey;
-      font-weight: 400;
-      font-size: 3rem;
-      padding: 1rem 0 3rem 0;
-      span {
-          padding-right:3rem ;
-      }
-  }
-  .current-temperature__value {
-      font-size: 12rem;
-      font-weight: 700;
-      line-height: 16rem;
-  }
-  .current-temperature__date {
-      display: flex;
-      margin-bottom: 10rem;
-  }
-  .location-and-date__date {
-      font-weight: 700;
-      width: 50%;
-      font-size: 6.25rem;
-      line-height: 8rem;
-      margin-left: 8rem;
-      text-align: left;
-  }
-  
-  @media screen and (max-width: $tablet) {
-    .main-container {
-        margin: auto;
-        font-size: 1.1em;
-    }
-      .current-temperature {
-          flex-direction: column;
-      }
-      .current-temperature__icon-container{
-          .current-temperature__icon {
-            width: 10rem;
-            justify-content: center;
-            align-items: center;
-          }
-      }
-      .current-temperature__city {
-          flex-direction: column;
-          font-size: 2rem;
-          text-align: center;
-          padding-top:2rem;
-          span {
-            padding-right:0rem ;
-        }
-      }
-      .location-and-date__location {
-        order: -1;
-      }
-      .current-temperature__date {
-          flex-direction: column;
-          margin-bottom: 1rem;
-          order: 1;
-          
-      }
-      .current-temperature__value {
-          font-size: 4.5rem;
-          text-align: center;
-          line-height: 6rem;
-      }
-      .location-and-date__date{
-          font-size: 2rem;
-          text-align: center;
-          width: auto;
-          margin: auto;
-          line-height: 2rem;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   box-sizing: border-box;
+}
 
+body {
+   margin: 12px;
+   font-size: 100%;
+   font-family: 'Roboto', reg;
+   color: white;
+   height: 100%;
+   background-color: #1c1c5c;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+.main-container {
+   margin: 6rem auto;
+   font-size: 1.1em;
+}
+.current-temperature__icon-container {
+   flex-grow: 1.25;
+   text-align: center;
+}
+.weather-by-hour__logo {
+   width: 20.5rem;
+}
+.current-temperature {
+   display: flex;
+   margin-top: 0.25em;
+   width: 100%;
+}
+.current-temperature__icon-container {
+   flex-grow: 1.25;
+   text-align: center;
+}
+.current-temperature__icon {
+   width: 20.5rem;
+}
+.current-temperature__content-container {
+   flex-grow: 1;
+   text-align: center;
+}
+.current-temperature__city {
+   display: flex;
+   margin-top: -0.5em;
+   text-align: center;
+   color: grey;
+   font-weight: 400;
+   font-size: 3rem;
+   padding: 1rem 0 3rem 0;
+   span {
+      padding-right: 3rem;
+   }
+}
+.current-temperature__value {
+   font-size: 12rem;
+   font-weight: 700;
+   line-height: 16rem;
+}
+.current-temperature__date {
+   display: flex;
+   margin-bottom: 10rem;
+}
+.location-and-date__date {
+   font-weight: 700;
+   width: 50%;
+   font-size: 6.25rem;
+   line-height: 8rem;
+   margin-left: 8rem;
+   text-align: left;
+}
+
+@media screen and (max-width: $tablet) {
+   .main-container {
+      margin: auto;
+      font-size: 1.1em;
+   }
+   .current-temperature {
+      flex-direction: column;
+   }
+   .current-temperature__icon-container {
+      .current-temperature__icon {
+         width: 10rem;
+         justify-content: center;
+         align-items: center;
       }
-  
-  
-  
-  } 
+   }
+   .current-temperature__city {
+      flex-direction: column;
+      font-size: 2rem;
+      text-align: center;
+      padding-top: 2rem;
+      span {
+         padding-right: 0rem;
+      }
+   }
+   .location-and-date__location {
+      order: -1;
+   }
+   .current-temperature__date {
+      flex-direction: column;
+      margin-bottom: 1rem;
+      order: 1;
+   }
+   .current-temperature__value {
+      font-size: 4.5rem;
+      text-align: center;
+      line-height: 6rem;
+   }
+   .location-and-date__date {
+      font-size: 2rem;
+      text-align: center;
+      width: auto;
+      margin: auto;
+      line-height: 2rem;
+   }
+}
