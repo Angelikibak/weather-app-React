@@ -1,14 +1,14 @@
 import React,{useState, useEffect} from 'react'
 import Weather from './components/weather/weather';
-
+import Loading from './components/loading/loading'
 
 const kelvin = 273;
 
 
 const App = () => {
   const [weatherInfo, setWeatherInfo] = useState(null)
-  const weatherTime = [0,1,2,3,4,5,6,7]
 
+  const weatherTime = [0,1,2,3,4,5,6,7]
 
   async function FetchWeatherData  () {
 
@@ -132,6 +132,7 @@ const App = () => {
             
   
     return (
+      weatherInfo ? 
       <main className ="main-container">
       <div className="current-temperature">
           <div className="current-temperature__icon-container">
@@ -162,7 +163,7 @@ const App = () => {
               )} 
               </div>
               </div>
-        </main>
+        </main> : <Loading />
     )
 }
 
