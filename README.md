@@ -33,3 +33,5 @@ The app is styled with Sass
 
 Cors solution implementation was made with automatic proxying
 This <a href = 'https://www.telerik.com/blogs/dealing-with-cors-in-create-react-app?fbclid=IwAR16UkgOlvjuR2ra7KhOoDMI7xpGormybuh4FCoQhgCsK5ElafcYsNMat4w'>article</a> was very helpfull.
+
+Github repo link : https://github.com/Angelikibak/weather-app-react.git
